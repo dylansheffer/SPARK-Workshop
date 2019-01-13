@@ -1,0 +1,139 @@
+/* === Variables === */
+:root {
+  --nav-height: 75px;
+  --mobile-columns: repeat(4, 1fr);
+  --font-serif: 'Merriweather', serif;
+  --font-sans-serif: 'Merriweather Sans', sans-serif;
+}
+
+/* === Base Styles === */
+body {
+  font-size: 16px;
+  font-family: var(--font-sans-serif);
+}
+
+h1,
+h2 {
+  font-family: var(--font-serif);
+}
+
+/* === Layout ===  */
+body {
+  display: grid;
+  grid-template-columns: var(--mobile-columns);
+  grid-auto-rows: auto;
+  grid-template-areas:
+    "nv nv nv nv"
+    "hr hr hr hr"
+    "fr fr fr fr"
+    "ca ca ca ca"
+    "ft ft ft ft";
+}
+
+.container {
+  max-width: 1000px;
+}
+
+nav {
+  grid-area: nv;
+  height: var(--nav-height);
+  width: 100%;
+}
+
+nav .container {
+  height: var(--nav-height);
+  display: grid;
+  grid-template-columns: var(--mobile-columns);
+  align-items: center;
+}
+
+.nav-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: var(--nav-height);
+  width: var(--nav-height);
+}
+
+.logo {
+  font-size: 2.5em;
+  font-family: var(--font-serif);
+}
+
+.nav-items {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  grid-column: 2 / -1;
+}
+
+nav li {
+  padding: 5px;
+  margin: 10px;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+section.hero {
+  grid-area: hr;
+}
+
+section.hero .container {
+  height: calc(100vh - var(--nav-height));
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section.features {
+  grid-area: fr;
+}
+
+section.call-to-action {
+  grid-area: ca;
+}
+
+footer {
+  grid-area: ft;
+}
+
+/* === Styling === */
+
+/* Navigation */
+nav {
+  color: white;
+  background: black;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+nav a {
+  color: white
+}
+
+.nav-items .active {
+  text-decoration: underline;
+}
+
+/* Hero */
+section.hero {}
+
+/* Footer */
+footer {
+  color: white;
+  background: black;
+}
+
+/* General */
+.cta {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+}
