@@ -6,17 +6,6 @@
   --font-sans-serif: 'Merriweather Sans', sans-serif;
 }
 
-/* === Base Styles === */
-body {
-  font-size: 16px;
-  font-family: var(--font-sans-serif);
-}
-
-h1,
-h2 {
-  font-family: var(--font-serif);
-}
-
 /* === Layout ===  */
 body {
   display: grid;
@@ -28,6 +17,7 @@ body {
     "fr fr fr fr"
     "ca ca ca ca"
     "ft ft ft ft";
+  justify-items: center;
 }
 
 .container {
@@ -38,12 +28,16 @@ nav {
   grid-area: nv;
   height: var(--nav-height);
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 nav .container {
+  width: 100%;
   height: var(--nav-height);
   display: grid;
   grid-template-columns: var(--mobile-columns);
+  justify-items: center;
   align-items: center;
 }
 
@@ -100,9 +94,31 @@ section.call-to-action {
 
 footer {
   grid-area: ft;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+footer .container {
+  width: 100%;
 }
 
 /* === Styling === */
+
+/* === Base Styles === */
+body {
+  font-size: 16px;
+  font-family: var(--font-sans-serif);
+}
+
+h1,
+h2 {
+  font-family: var(--font-serif);
+}
+
+p {
+  line-height: 1.75em;
+}
 
 /* Navigation */
 nav {
