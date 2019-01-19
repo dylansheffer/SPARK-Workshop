@@ -12,6 +12,6 @@ The web is used by people from all ability and background and it is our job as d
 
 ## What You'll Make
 
-You'll customize a website with your own content and styles using [Thimble](https://thimble.mozilla.org/en-US/).
+You'll customize a website with your own content and styles using [Thimble](https://thimbleprojects.org/dylansheffer/623177/).
 
 P.S. This template can be later used to show off your projects!
