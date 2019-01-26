@@ -2,7 +2,7 @@
 
 ## Description
 
-The web is used by people from all ability and background and it is our job as developers to ensure that our sites are inclusive towards all people. During this workshop, we will first learn some essential HTML and CSS concepts. Once we understand the foundation, we will people with disabilities use the web and how we can develop experiences that work for everybody.
+The web is used by people from all ability and background and it is our job as developers to ensure that our sites are inclusive towards all people. During this workshop, we will first learn some essential HTML and CSS concepts. Once we understand the foundation, we will learn how people with disabilities use the web and how we can develop experiences that work for everybody.
 
 ## Learning Objectives
 
